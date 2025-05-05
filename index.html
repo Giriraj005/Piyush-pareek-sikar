@@ -1,254 +1,168 @@
-`index.html`
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-<title>Piyush Pareek Sikar - Subscription Inquiry</title>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-  /* Reset and base */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  html, body {
-    height: 100%;
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    overflow: hidden;
-  }
-
-  .container {
-    max-width: 350px;
-    width: 100%;
-    background: rgba(0,0,0,0.7);
-    border-radius: 22px;
-    padding: 28px 30px 42px 30px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.7);
-    text-align: center;
-    animation: fadeIn 1s ease forwards;
-    opacity: 0;
-  }
-
-  @keyframes fadeIn {
-    to {
-      opacity: 1;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piyush Pareek Sikar - Official Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
     }
-  }
-
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
-
-  .header img {
-    width: 38px;
-    height: 28px;
-    filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.4));
-  }
-
-  h1 {
-    font-weight: 700;
-    font-size: 2.1rem;
-    letter-spacing: 1.2px;
-    color: #ffffff;
-  }
-
-  h2 {
-    font-weight: 500;
-    font-size: 1.15rem;
-    font-style: italic;
-    margin: 14px 0 24px 0;
-    color: #b1e197;
-    text-shadow: 1px 1px 8px rgba(255 255 255 / 0.2);
-  }
-
-  p {
-    font-size: 1rem;
-    margin-bottom: 25px;
-    line-height: 1.4;
-    color: #d1e9c6;
-  }
-
-
-  iframe.subscribe-button {
-    width: 100%;
-    height: 56px;
-    border: none;
-    margin-bottom: 28px;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.35);
-    transition: box-shadow 0.3s ease;
-  }
-  iframe.subscribe-button:hover,
-  iframe.subscribe-button:focus {
-    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-    outline: none;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 6px;
-  }
-
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    padding: 12px 14px;
-    border-radius: 10px;
-    border: none;
-    font-size: 1rem;
-    font-family: 'Poppins', sans-serif;
-    resize: none;
-    box-shadow: inset 0 0 8px rgba(255 255 255 / 0.15);
-    background-color: rgba(255 255 255 / 0.12);
-    color: #eef8e2;
-    transition: box-shadow 0.3s ease, background-color 0.3s ease;
-  }
-  input[type="text"]::placeholder,
-  input[type="email"]::placeholder,
-  textarea::placeholder {
-    color: #cde3a0;
-    font-style: italic;
-  }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  textarea:focus {
-    outline: none;
-    background-color: rgba(255 255 255 / 0.25);
-    box-shadow: 0 0 6px 2px #a7d822;
-    color: #fff;
-  }
-
-  textarea {
-    min-height: 80px;
-  }
-
-  button {
-    background: #a7d822;
-    color: #1b1b1b;
-    font-weight: 700;
-    font-size: 1.05rem;
-    padding: 14px;
-    border: none;
-    border-radius: 14px;
-    cursor: pointer;
-    transition: background 0.4s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 12px #a7d822aa;
-  }
-
-  button:hover,
-  button:focus {
-    background: #7db311;
-    box-shadow: 0 0 20px #7db311dd;
-    outline: none;
-  }
-
-  .message {
-    margin-top: 18px;
-    font-size: 0.95rem;
-    min-height: 24px;
-    font-weight: 600;
-    text-shadow: 1px 1px 2px rgb(0 0 0 / 0.6);
-  }
-
-  @media (max-width: 400px) {
-    .container {
-      padding: 20px 22px 40px 22px;
+    header {
+      background: #2d2dff;
+      color: white;
+      padding: 20px;
+      text-align: center;
     }
-    h1 {
-      font-size: 1.8rem;
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #1c1cb2;
+      padding: 10px;
+      flex-wrap: wrap;
     }
-    h2 {
-      font-size: 1rem;
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 15px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+    }
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
     }
     button {
-      font-size: 1rem;
+      padding: 10px 20px;
+      background: #2d2dff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
-    iframe.subscribe-button {
-      height: 52px;
+    button:hover {
+      background: #1c1cb2;
     }
-  }
-</style>
+  </style>
 </head>
 <body>
-  <div class="container" role="main" aria-label="Subscription inquiry for Piyush Pareek Sikar YouTube channel">
-    <div class="header">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/YouTube_social_white_square.svg" alt="YouTube logo" />
-      <h1>Piyush Pareek Sikar</h1>
+  <header>
+    <h1>Welcome to Piyush Pareek Sikar</h1>
+    <p>Educational Support | Study Material | Exam Preparation</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#videos">Videos</a>
+    <a href="#materials">Study Materials</a>
+    <a href="#courses">Courses</a>
+    <a href="#join">Join Us</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <div class="card">
+      <h2>About Us</h2>
+      <p>This platform is created to help Shekhawati University students with quality educational content. We provide lecture videos, notes, guess papers, and exam tips by Giriraj Pareek & team.</p>
     </div>
-    <h2>Subscribe & Inquiry</h2>
-    <p>Welcome! Click below to subscribe to my YouTube channel, or send your subscription inquiry using the form.</p>
+  </section>
 
-    <!-- YouTube Subscribe Button -->
-    <iframe class="subscribe-button" 
-      src="https://www.youtube.com/subscribe_embed?usegapi=1&channel=PiyushPareekSikar" 
-      title="Subscribe to Piyush Pareek Sikar on YouTube" 
-      scrolling="no" frameborder="0" allowfullscreen 
-      tabindex="0"></iframe>
+  <section id="videos">
+    <div class="card">
+      <h2>Latest YouTube Videos</h2>
+      <iframe src="https://www.youtube.com/embed?listType=playlist&list=UU3VK4WhYk63ljXFe7zgm8bg" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
 
-    <form id="inquiryForm" novalidate>
-      <input type="text" id="name" name="name" placeholder="Your Name" required autocomplete="name" aria-label="Your Name" />
-      <input type="email" id="email" name="email" placeholder="Your Email" required autocomplete="email" aria-label="Your Email" />
-      <textarea id="message" name="message" placeholder="Your Inquiry" required aria-label="Your Inquiry"></textarea>
-      <button type="submit" aria-label="Send your subscription inquiry">Send Inquiry</button>
-      <div class="message" aria-live="polite" id="formMessage"></div>
-    </form>
-  </div>
+  <section id="materials">
+    <div class="card">
+      <h2>Study Materials</h2>
+      <ul>
+        <li><a href="#">B.Com Notes (Coming Soon)</a></li>
+        <li><a href="#">BA Guess Papers</a></li>
+        <li><a href="#">PDF Downloads</a></li>
+      </ul>
+    </div>
+  </section>
 
-<script>
-  document.getElementById('inquiryForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const form = event.target;
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const message = form.message.value.trim();
-    const formMessage = document.getElementById('formMessage');
+  <section id="courses">
+    <div class="card">
+      <h2>Courses Offered</h2>
+      <ul>
+        <li>BA – Political Science, Geography</li>
+        <li>B.Com – EAFM, ABST, Business Law</li>
+        <li>B.Sc – Zoology, Botany</li>
+      </ul>
+    </div>
+  </section>
 
-    function validateEmail(email) {
-      // Simple email validation regex
-      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    }
+  <section id="join">
+    <div class="card">
+      <h2>Join Our Community</h2>
+      <p>Stay updated with latest videos and notes:</p>
+      <p><a href="https://t.me/science_college_sikar" target="_blank">Join Telegram</a></p>
+      <p><a href="https://chat.whatsapp.com/YOUR_WHATSAPP_LINK" target="_blank">Join WhatsApp Group</a></p>
+      <form>
+        <input type="email" placeholder="Enter your email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
 
-    if (!name || !email || !message) {
-      formMessage.textContent = 'Please fill in all fields.';
-      formMessage.style.color = '#ff6b6b';
-      return;
-    }
-    if (!validateEmail(email)) {
-      formMessage.textContent = 'Please enter a valid email address.';
-      formMessage.style.color = '#ff6b6b';
-      return;
-    }
+  <section id="testimonials">
+    <div class="card">
+      <h2>What Students Say</h2>
+      <blockquote>“Very helpful content for exams! Thanks Piyush sir.” – Ramesh Kumar</blockquote>
+      <blockquote>“Best platform for Shekhawati University students.” – Anita Sharma</blockquote>
+    </div>
+  </section>
 
-    // Simulate form submission process
-    formMessage.style.color = '#b9f6a9';
-    formMessage.textContent = 'Sending your inquiry...';
+  <section id="contact">
+    <div class="card">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:piyushpareeksikar@gmail.com">piyushpareeksikar@gmail.com</a></p>
+      <p>Instagram: <a href="https://www.instagram.com/maverick_piyu" target="_blank">@maverick_piyu</a></p>
+    </div>
+  </section>
 
-    setTimeout(() => {
-      formMessage.textContent = 'Thank you, ' + name + '! Your subscription inquiry has been received.';
-      form.reset();
-    }, 1400);
-
-  });
-</script>
+  <footer>
+    <p>&copy; 2025 Piyush Pareek Sikar. All rights reserved.</p>
+  </footer>
 </body>
 </html>
-
-```
-
