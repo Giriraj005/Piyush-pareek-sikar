@@ -1,0 +1,59 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #800000;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li {
+  display: inline;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar .nav-links a:hover {
+  color: #ffd700;
+}
+
+/* Section Styling */
+section {
+  padding: 20px;
+}
+
+section a {
+  text-decoration: none;
+  color: #800000;
+  font-weight: bold;
+}
+section a:hover {
+  color: #d00000;
+}
